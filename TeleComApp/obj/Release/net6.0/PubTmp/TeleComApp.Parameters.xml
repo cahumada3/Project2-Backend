@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="TeleCom-App" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\A\\source\\repos\\TeleComApp\\TeleComApp\\obj\\Release\\net6\.0\\PubTmp\\Out\\$" />
+  </parameter>
+  <parameter name="TeleComApp.Data.TCcontext" description="" value="Server=tcp:telecom-app-server.database.windows.net,1433;Initial Catalog=tele-com-app-db;Persist Security Info=False;User ID=telecom-app-server-admin;Password=carolineahu33!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;" tags="dbfullsql">
+    <parameterEntry kind="ProviderPath" scope="dbfullsql" match="^C:\\Users\\A\\source\\repos\\TeleComApp\\TeleComApp\\obj\\Release\\net6\.0\\PubTmp\\EFSQLScripts\\TeleComApp\.Data\.TCcontext\.sql$" />
+  </parameter>
+</parameters>

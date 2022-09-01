@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA9YUesyA8mECH5H4KtMoviQAAAAACAAAAAAAQZgAAAAEAACAAAAAetWjSRa+sbC9LsR1h+6SOljT9fBHIJ+wvklDOgAIDVQAAAAAOgAAAAAIAACAAAADwAcTRp0fR3LjPrISlub5ClBzs3AZvJrYj8b1/L117f4AAAACyA2K5omzLVbRbA3kt//uQEZgEqwsYTp9XlBrpuu67IdbuMMz2slYSJv2UUTocgz2X9Lymz+ikBu64MTkOoQxcFHy2B5Pd53QokYHutBG6a9ibYNB+Vx0XGGIaNJ5xzjNzbx70qOelNW7kzAIW/7LC7VXwwXVWGzCYms/NmvAvAUAAAADZ22+ySXNLCQ8uqkRQnvrLl229EEHk1D4PCd0hxCc3TwRYOCFCqYHk6BdpF146BoRiBhs9dV+YVaq/WaHc96YE</EncryptedPassword>
+    <History>True|2022-09-01T19:27:45.6980610Z;True|2022-08-31T17:02:20.6981506-04:00;True|2022-08-31T16:54:56.1528706-04:00;False|2022-08-31T16:53:43.2278731-04:00;True|2022-08-31T15:56:03.0407317-04:00;True|2022-08-31T15:48:30.7233302-04:00;True|2022-08-31T15:29:46.4501062-04:00;False|2022-08-31T15:19:01.7042082-04:00;False|2022-08-31T15:13:57.3215006-04:00;False|2022-08-31T15:10:25.7996663-04:00;False|2022-08-31T15:06:06.9667128-04:00;False|2022-08-31T15:00:50.8195203-04:00;True|2022-08-31T11:10:07.2541570-04:00;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConn">
+      <Value>Server=tcp:telecom-app-server.database.windows.net,1433%3bInitial Catalog=tele-com-app-db%3bPersist Security Info=False%3bUser ID=telecom-app-server-admin%3bPassword=carolineahu33!%3bMultipleActiveResultSets=False%3bEncrypt=True%3bTrustServerCertificate=False%3bConnection Timeout=30%3b</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="TeleComApp.Data.TCcontext">
+      <Value>Server=tcp:telecom-app-server.database.windows.net,1433%3bInitial Catalog=tele-com-app-db%3bPersist Security Info=False%3bUser ID=telecom-app-server-admin%3bPassword=carolineahu33!%3bMultipleActiveResultSets=False%3bEncrypt=True%3bTrustServerCertificate=False%3bConnection Timeout=30%3b</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>
