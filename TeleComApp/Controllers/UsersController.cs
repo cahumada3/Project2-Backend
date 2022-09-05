@@ -41,6 +41,16 @@ namespace TeleComApp.Controllers
             return users;
         }
 
+        [HttpGet, Route("exsits/{email}")]
+        public async Task<Boolean> CheckUser(string email)
+        {
+            if (_context.Users == null)
+                return false;
+            var user = await _context.Users.Where(u => u.Email == email).FirstOrDefaultAsync();
+            if (user == null)
+                return false;
+            return true;
+        }
         [HttpGet, Route("email/{email}")]
         public async Task<ActionResult<UserDetailsDTO>> GetUser(string email)
         {
@@ -58,7 +68,6 @@ namespace TeleComApp.Controllers
                 var uDTO = new UserDetailsDTO
                 {
                     UserId = user.UserId,
-                    Address = user.Address,
                     FirstName = user.FirstName,
                     LastName = user.LastName,
                     Email = user.Email,
@@ -88,7 +97,6 @@ namespace TeleComApp.Controllers
             var uDTO = new UserDetailsDTO
             {
                 UserId = user.UserId,
-                Address = user.Address,
                 FirstName = user.FirstName,
                 LastName = user.LastName,
                 Email = user.Email,

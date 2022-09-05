@@ -8,7 +8,6 @@ namespace TeleComApp.Models
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Email { get; set; }
-        public string Address { get; set; }
         
         public virtual ICollection<Device> Devices { get; set; }
         public virtual ICollection<Plan> Plans { get; set; }
@@ -19,7 +18,6 @@ namespace TeleComApp.Models
             this.FirstName = dto.FirstName;
             this.LastName = dto.LastName;
             this.Email = dto.Email;
-            this.Address = dto.Address;
             this.Devices = new List<Device>();
             this.Plans = new List<Plan>();
         }
@@ -30,7 +28,6 @@ namespace TeleComApp.Models
             this.FirstName = dto.FirstName;
             this.LastName = dto.LastName;
             this.Email = dto.Email;
-            this.Address = dto.Address;
             this.Devices = new List<Device>();
             this.Plans = new List<Plan>();
         }
