@@ -9970,19 +9970,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\A\\.nuget\\packages\\": {}
+    "C:\\Users\\EAOwr\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\A\\source\\repos\\Project2\\Project2-Backend\\TeleComApp\\TeleComApp.csproj",
+      "projectUniqueName": "C:\\Users\\EAOwr\\source\\repos\\TeleComApp\\BackEnd\\Project2-Backend\\TeleComApp\\TeleComApp.csproj",
       "projectName": "TeleComApp",
-      "projectPath": "C:\\Users\\A\\source\\repos\\Project2\\Project2-Backend\\TeleComApp\\TeleComApp.csproj",
-      "packagesPath": "C:\\Users\\A\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\A\\source\\repos\\Project2\\Project2-Backend\\TeleComApp\\obj\\",
+      "projectPath": "C:\\Users\\EAOwr\\source\\repos\\TeleComApp\\BackEnd\\Project2-Backend\\TeleComApp\\TeleComApp.csproj",
+      "packagesPath": "C:\\Users\\EAOwr\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\EAOwr\\source\\repos\\TeleComApp\\BackEnd\\Project2-Backend\\TeleComApp\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\A\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\EAOwr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -10063,7 +10068,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
       }
     }
   }

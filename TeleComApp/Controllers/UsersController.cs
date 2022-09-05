@@ -41,6 +41,34 @@ namespace TeleComApp.Controllers
             return users;
         }
 
+        [HttpGet, Route("email/{email}")]
+        public async Task<ActionResult<UserDetailsDTO>> GetUser(string email)
+        {
+            if (_context.Users == null)
+            {
+                return NotFound();
+            }
+                var user = await _context.Users.Where(u => u.Email == email).FirstOrDefaultAsync();
+                if (user == null)
+                {
+                return NotFound();
+                }
+                var devices = await _context.Devices.Where(d => d.UserId == user.UserId).ToListAsync();
+                var plans = await _context.Plans.Where(p => p.UserId == user.UserId).ToListAsync();
+                var uDTO = new UserDetailsDTO
+                {
+                    UserId = user.UserId,
+                    Address = user.Address,
+                    FirstName = user.FirstName,
+                    LastName = user.LastName,
+                    Email = user.Email,
+                    Devices = devices,
+                    Plans = plans
+                };
+
+            return Ok(uDTO);
+        }
+
         // GET: api/Users/5
         [HttpGet("{id}")]
         public async Task<ActionResult<UserDetailsDTO>> GetUser(int id)

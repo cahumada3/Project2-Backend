@@ -5,7 +5,7 @@ namespace TeleComApp.Models
     public class Plan
     {
         public int PlanId { get; set; }
-        public type Type { get; set; }
+        public string Type { get; set; }
         public int PhoneLines { get; set; }
         public int NumberLines => Devices?.Count ?? 0;
         public int UserId { get; set; }
@@ -30,12 +30,5 @@ namespace TeleComApp.Models
             this.Devices = new List<Device>();
         }
 
-    }
-
-    public enum type
-    {
-        Famliy,
-        Work,
-        Enterprise
     }
 }
