@@ -48,7 +48,6 @@ namespace TeleComApp.Controllers
               return NotFound();
           }
             var plan = await _context.Plans.FindAsync(id);
-
             if (plan == null)
             {
                 return NotFound();

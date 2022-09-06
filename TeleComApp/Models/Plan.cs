@@ -5,7 +5,7 @@ namespace TeleComApp.Models
     public class Plan
     {
         public int PlanId { get; set; }
-        public string Type { get; set; }
+        public int Type { get; set; }
         public int PhoneLines { get; set; }
         public int NumberLines => Devices?.Count ?? 0;
         public int UserId { get; set; }
@@ -15,7 +15,12 @@ namespace TeleComApp.Models
 
         public Plan(PlanDTO dto)
         {
-            this.Type = dto.Type;
+            if (dto.Type.Contains("f"))
+                this.Type = 1;
+            if (dto.Type.Contains("work"))
+                this.Type = 2;
+            if (dto.Type.Contains("enter"))
+                this.Type = 3;
             this.PhoneLines = dto.PhoneLines;
             this.UserId = dto.UserId;
             this.Devices = new List<Device>();
@@ -24,7 +29,12 @@ namespace TeleComApp.Models
         public Plan(PlanDTO dto, int id)
         {
             this.PlanId = id;
-            this.Type = dto.Type;
+            if (dto.Type.Contains("f"))
+                this.Type = 1;
+            if (dto.Type.Contains("work"))
+                this.Type = 2;
+            if (dto.Type.Contains("enter"))
+                this.Type = 3;
             this.PhoneLines = dto.PhoneLines;
             this.UserId = dto.UserId;
             this.Devices = new List<Device>();
