@@ -16,11 +16,11 @@ namespace TeleComApp.Models
         public Plan(PlanDTO dto)
         {
             if (dto.Type.Contains("f"))
-                this.Type = 1;
+                this.Type = 0;
             if (dto.Type.Contains("work"))
-                this.Type = 2;
+                this.Type = 1;
             if (dto.Type.Contains("enter"))
-                this.Type = 3;
+                this.Type = 2;
             this.PhoneLines = dto.PhoneLines;
             this.UserId = dto.UserId;
             this.Devices = new List<Device>();
@@ -30,11 +30,11 @@ namespace TeleComApp.Models
         {
             this.PlanId = id;
             if (dto.Type.Contains("f"))
-                this.Type = 1;
+                this.Type = 0;
             if (dto.Type.Contains("work"))
-                this.Type = 2;
+                this.Type = 1;
             if (dto.Type.Contains("enter"))
-                this.Type = 3;
+                this.Type = 2;
             this.PhoneLines = dto.PhoneLines;
             this.UserId = dto.UserId;
             this.Devices = new List<Device>();
